@@ -912,3 +912,268 @@ button {
 }
 
 
+/* --------------------------------------------------
+   12. TABLET AND MOBILE RESPONSIVE STYLES
+   -------------------------------------------------- */
+
+@media (max-width: 900px) {
+    .site-header {
+        width: calc(100% - 35px);
+        padding-left: 18px;
+    }
+
+    .navigation {
+        gap: 0;
+    }
+
+    .navigation a {
+        padding: 10px 8px;
+        font-size: 9px;
+    }
+
+    .header-availability {
+        padding: 10px 11px;
+        font-size: 9px;
+    }
+
+    .hero {
+        min-height: 650px;
+    }
+
+    .section-space {
+        padding: 85px 5vw;
+    }
+
+    .about-layout {
+        gap: 5vw;
+    }
+
+    .project-visual {
+        min-height: 240px;
+    }
+}
+
+@media (max-width: 650px) {
+    html {
+        scroll-padding-top: 80px;
+    }
+
+    .site-header {
+        top: 12px;
+        min-height: 52px;
+        width: calc(100% - 24px);
+        padding: 8px 15px;
+    }
+
+    .brand {
+        font-size: 13px;
+    }
+
+    .menu-toggle {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 5px;
+        width: 35px;
+        height: 35px;
+        padding: 7px;
+        border: 0;
+        border-radius: 50%;
+        background: var(--yellow);
+        cursor: pointer;
+    }
+
+    .menu-toggle span {
+        width: 100%;
+        height: 2px;
+        background: #222;
+        transition: transform 0.25s ease;
+    }
+
+    .menu-toggle.open span:first-child {
+        transform: translateY(3.5px) rotate(45deg);
+    }
+
+    .menu-toggle.open span:last-child {
+        transform: translateY(-3.5px) rotate(-45deg);
+    }
+
+    .navigation {
+        position: absolute;
+        top: 62px;
+        right: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 4px;
+        padding: 12px;
+        border: 1px solid rgba(40, 36, 30, 0.08);
+        border-radius: 18px;
+        background: rgba(250, 248, 242, 0.98);
+        box-shadow: 0 12px 30px rgba(50, 42, 25, 0.12);
+        opacity: 0;
+        pointer-events: none;
+        transform: translateY(-8px);
+        transition: opacity 0.25s ease, transform 0.25s ease;
+    }
+
+    .navigation.open {
+        opacity: 1;
+        pointer-events: auto;
+        transform: translateY(0);
+    }
+
+    .navigation a {
+        padding: 12px;
+        font-size: 11px;
+    }
+
+    .header-availability {
+        display: none;
+    }
+
+    .hero {
+        min-height: 680px;
+        height: 90vh;
+        padding: 120px 7vw 65px;
+    }
+
+    .hero h1 {
+        font-size: clamp(62px, 17vw, 105px);
+    }
+
+    .hero-side-note {
+        right: 4vw;
+        font-size: 8px;
+    }
+
+    .hero-bottom-note {
+        right: 7vw;
+        bottom: 25px;
+    }
+
+    .intro-section {
+        padding: 85px 18px 55px;
+    }
+
+    .intro-section h2 {
+        margin-bottom: 45px;
+    }
+
+    .section-space {
+        padding: 75px 6vw;
+    }
+
+    .section-topline .mono {
+        max-width: 130px;
+        text-align: right;
+        line-height: 1.6;
+    }
+
+    .section-intro,
+    .skills-heading {
+        display: block;
+        margin: 40px 0 32px;
+    }
+
+    .section-intro p,
+    .skills-heading > p {
+        margin-top: 20px;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+        gap: 38px;
+    }
+
+    .project-visual {
+        min-height: 260px;
+    }
+
+    .about-heading {
+        padding: 45px 0 30px;
+    }
+
+    .about-layout,
+    .journey-content {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .about-photo,
+    .about-photo-placeholder {
+        min-height: 370px;
+        height: 370px;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .skill-box {
+        min-height: 170px;
+        padding: 18px;
+    }
+
+    .skill-box h3 {
+        margin-top: 25px;
+        font-size: 17px;
+    }
+
+    .journey-content {
+        padding-top: 45px;
+    }
+
+    .journey-item {
+        grid-template-columns: 75px 1fr;
+        gap: 12px;
+    }
+
+    .contact-section {
+        min-height: 560px;
+        padding: 80px 7vw;
+    }
+
+    .contact-content h2 {
+        font-size: clamp(58px, 15vw, 90px);
+    }
+
+    .contact-side-text {
+        right: 7vw;
+        left: 7vw;
+        font-size: 8px;
+        line-height: 1.7;
+    }
+
+    .site-footer {
+        grid-template-columns: 1fr;
+        padding: 28px 7vw;
+    }
+
+    .footer-links {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 18px;
+    }
+
+    .site-footer p {
+        grid-column: auto;
+    }
+}
+
+@media (max-width: 380px) {
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 58px;
+    }
+
+    .project-visual {
+        min-height: 220px;
+    }
+}
+
+
