@@ -468,24 +468,24 @@ button {
     font-size: 9px;
 }
 
-.visual-java {
+.visual-defence {
     background: linear-gradient(135deg, #182c2b, #46776a);
     color: #d9ff7a;
 }
 
-.visual-calculator {
-    background: linear-gradient(135deg, #252638, #7373a4);
-    color: #f4e5ff;
+.visual-pos {
+    background: linear-gradient(135deg, #3a1f14, #b5562f);
+    color: #ffe2b8;
 }
 
-.visual-database {
+.visual-weather {
+    background: linear-gradient(135deg, #17324d, #5b9bd1);
+    color: #e6f4ff;
+}
+
+.visual-employee {
     background: linear-gradient(135deg, #c5b48b, #f1dfaa);
     color: #373020;
-}
-
-.visual-website {
-    background: linear-gradient(135deg, #d5d0c5, #fff1a3);
-    color: #333027;
 }
 
 .visual-number {
