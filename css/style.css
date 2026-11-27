@@ -752,3 +752,85 @@ button {
 }
 
 
+/* --------------------------------------------------
+   9. CONTACT SECTION
+   -------------------------------------------------- */
+
+.contact-section {
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: 650px;
+    padding: 100px 7.5vw;
+    overflow: hidden;
+    background: #343d25;
+    color: white;
+    isolation: isolate;
+}
+
+.contact-background-shape {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background:
+        radial-gradient(ellipse at 80% 20%, rgba(202, 191, 80, 0.35), transparent 35%),
+        radial-gradient(ellipse at 15% 90%, rgba(10, 25, 13, 0.75), transparent 50%),
+        linear-gradient(120deg, #263b2c, #68734b);
+    transform: scale(1.05);
+}
+
+.contact-content {
+    position: relative;
+    z-index: 1;
+}
+
+.contact-content .small-label {
+    color: #e7e0a2;
+}
+
+.contact-content h2 {
+    margin: 25px 0 35px;
+    font-size: clamp(60px, 10vw, 135px);
+    line-height: 0.88;
+    letter-spacing: -0.09em;
+}
+
+.contact-content h2 span {
+    color: var(--yellow);
+}
+
+.contact-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 35px;
+    padding: 16px 22px;
+    border-radius: 40px;
+    background: var(--yellow);
+    color: #24221f;
+    font-family: var(--small-font);
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    transition: background 0.25s ease, transform 0.25s ease;
+}
+
+.contact-button:hover {
+    background: white;
+    transform: translateY(-4px);
+}
+
+.contact-button span {
+    font-size: 17px;
+}
+
+.contact-side-text {
+    position: absolute;
+    right: 7.5vw;
+    bottom: 35px;
+    color: rgba(255, 255, 255, 0.7);
+    font-family: var(--small-font);
+    font-size: 9px;
+    letter-spacing: 0.12em;
+}
+
+
