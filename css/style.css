@@ -643,3 +643,62 @@ button {
 }
 
 
+/* --------------------------------------------------
+   7. SKILLS SECTION
+   -------------------------------------------------- */
+
+.skills-section {
+    background: var(--page-background);
+}
+
+.skills-heading {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    gap: 35px;
+    margin: 60px 0 45px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-top: 1px solid #ded9ce;
+    border-left: 1px solid #ded9ce;
+}
+
+.skill-box {
+    min-height: 190px;
+    padding: 25px;
+    border-right: 1px solid #ded9ce;
+    border-bottom: 1px solid #ded9ce;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.skill-box:hover {
+    position: relative;
+    z-index: 1;
+    background: #fff9ce;
+    transform: translateY(-4px);
+}
+
+.skill-box > span {
+    color: #a69a32;
+    font-family: var(--small-font);
+    font-size: 10px;
+}
+
+.skill-box h3 {
+    margin: 32px 0 8px;
+    font-size: 21px;
+    letter-spacing: -0.05em;
+}
+
+.skill-box p {
+    max-width: 250px;
+    margin: 0;
+    color: var(--muted-colour);
+    font-size: 11px;
+    line-height: 1.7;
+}
+
+
