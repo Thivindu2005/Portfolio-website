@@ -66,3 +66,97 @@ button {
 }
 
 
+/* --------------------------------------------------
+   2. SCROLL PROGRESS AND FLOATING NAVIGATION
+   -------------------------------------------------- */
+
+.scroll-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1200;
+    width: 0;
+    height: 4px;
+    background: var(--yellow);
+}
+
+.site-header {
+    position: fixed;
+    top: 22px;
+    left: 50%;
+    z-index: 1100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: min(900px, calc(100% - 70px));
+    min-height: 54px;
+    padding: 8px 18px 8px 24px;
+    border: 1px solid rgba(40, 36, 30, 0.08);
+    border-radius: 50px;
+    background: rgba(250, 248, 242, 0.88);
+    box-shadow: 0 8px 30px rgba(50, 42, 25, 0.08);
+    backdrop-filter: blur(18px);
+    transform: translateX(-50%);
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.site-header.scrolled {
+    background: rgba(255, 255, 255, 0.96);
+    box-shadow: 0 8px 35px rgba(50, 42, 25, 0.13);
+}
+
+.brand {
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: -0.06em;
+    white-space: nowrap;
+}
+
+.brand span {
+    color: #b9a900;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.navigation a {
+    padding: 10px 13px;
+    border-radius: 30px;
+    font-size: 10px;
+    font-weight: 700;
+    transition: background 0.25s ease, color 0.25s ease;
+}
+
+.navigation a:hover,
+.navigation a.active {
+    background: #eeeae0;
+    color: #171613;
+}
+
+.header-availability {
+    padding: 10px 15px;
+    border-radius: 30px;
+    background: var(--yellow);
+    font-size: 10px;
+    font-weight: 800;
+    white-space: nowrap;
+    transition: transform 0.25s ease, background 0.25s ease;
+}
+
+.header-availability:hover {
+    background: #ffe900;
+    transform: translateY(-2px);
+}
+
+.header-availability span {
+    margin-left: 7px;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+
