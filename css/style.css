@@ -306,3 +306,58 @@ button {
 }
 
 
+/* --------------------------------------------------
+   4. INTRODUCTION AND MOVING TEXT
+   -------------------------------------------------- */
+
+.intro-section {
+    padding: 115px 20px 75px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.intro-section h2 {
+    margin: 20px 0 65px;
+    font-size: clamp(35px, 6vw, 76px);
+    line-height: 1.05;
+    letter-spacing: -0.075em;
+}
+
+.intro-section h2 span,
+.section-intro h2 span,
+.about-heading h2 span,
+.skills-heading h2 span,
+.journey-content h2 span,
+.contact-content h2 span {
+    color: #c7b500;
+}
+
+.marquee {
+    overflow: hidden;
+    border-top: 1px solid #ded9ce;
+    border-bottom: 1px solid #ded9ce;
+    padding: 18px 0;
+}
+
+.marquee-track {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 35px;
+    width: max-content;
+    animation: marquee-move 24s linear infinite;
+}
+
+.marquee-track span {
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 0.18em;
+}
+
+.marquee-track i {
+    color: #d4c000;
+    font-size: 20px;
+    font-style: normal;
+}
+
+
