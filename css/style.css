@@ -874,6 +874,7 @@ button {
 .footer-links {
     display: flex;
     justify-content: flex-end;
+    align-items: center;
     gap: 25px;
 }
 
@@ -886,7 +887,35 @@ button {
 
 .footer-links a:hover {
     color: var(--yellow);
+    
 }
+
+.footer-links .social-icon {
+    display: grid;
+    width: 38px;
+    height: 38px;
+    place-items: center;
+    border: 1px solid #3b3932;
+    border-radius: 50%;
+    color: #d8d3c7;
+    font-size: 15px;
+    transition: background 0.25s ease, color 0.25s ease, border-color 0.25s ease, transform 0.25s ease;
+}
+
+.footer-links .social-icon:hover {
+    background: var(--yellow);
+    border-color: var(--yellow);
+    color: #1e1d18;
+    transform: translateY(-3px);
+    
+}
+
+.footer-links .social-github:hover    { background: #ffffff; border-color: #ffffff; }
+.footer-links .social-linkedin:hover  { background: #0a66c2; border-color: #0a66c2; color: #fff; }
+.footer-links .social-instagram:hover { background: #e4405f; border-color: #e4405f; color: #fff; }
+.footer-links .social-facebook:hover  { background: #1877f2; border-color: #1877f2; color: #fff; }
+.footer-links .social-youtube:hover   { background: #ff0000; border-color: #ff0000; color: #fff; }
+.footer-links .social-tiktok:hover    { background: #ffffff; border-color: #ffffff; }
 
 .site-footer p {
     grid-column: 1 / -1;
