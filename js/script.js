@@ -61,3 +61,53 @@ window.addEventListener("resize", updateScrollProgress);
 updateScrollProgress();
 
 
+// Reveal section content as it enters the visitor's screen.
+const elementsToReveal = document.querySelectorAll(".reveal");
+
+const revealObserver = new IntersectionObserver(function (entries, observer) {
+    entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+
+            // We only need to animate an element the first time it appears.
+            observer.unobserve(entry.target);
+        }
+    });
+}, {
+    threshold: 0.15
+});
+
+elementsToReveal.forEach(function (element) {
+    revealObserver.observe(element);
+});
+
+
+// Highlight the navigation link for the section currently being viewed.
+const pageSections = document.querySelectorAll("main section[id]");
+
+const sectionObserver = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+            const currentSection = entry.target.getAttribute("id");
+
+            navigationLinks.forEach(function (link) {
+                link.classList.remove("active");
+
+                if (link.getAttribute("href") === "#" + currentSection) {
+                    link.classList.add("active");
+                }
+            });
+        }
+    });
+}, {
+    rootMargin: "-35% 0px -55% 0px"
+});
+
+pageSections.forEach(function (section) {
+    sectionObserver.observe(section);
+});
+
+
+// Show the current year in the footer automatically.
+const yearElement = document.getElementById("currentYear");
+yearElement.textContent = new Date().getFullYear();
