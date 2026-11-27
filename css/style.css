@@ -702,3 +702,53 @@ button {
 }
 
 
+/* --------------------------------------------------
+   8. EDUCATION / JOURNEY SECTION
+   -------------------------------------------------- */
+
+.journey-section {
+    background: #e8e2d4;
+}
+
+.journey-content {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 7vw;
+    padding-top: 65px;
+}
+
+.journey-item {
+    display: grid;
+    grid-template-columns: 90px 1fr;
+    gap: 20px;
+    padding: 25px 0;
+    border-bottom: 1px solid #d0c8b8;
+}
+
+.journey-date {
+    padding-top: 5px;
+    color: #9a8c4c;
+    font-family: var(--small-font);
+    font-size: 9px;
+    letter-spacing: 0.1em;
+}
+
+.journey-item h3 {
+    margin: 0 0 10px;
+    font-size: 17px;
+}
+
+.journey-item p {
+    margin: 0 0 10px;
+    color: #777168;
+    font-size: 12px;
+    line-height: 1.8;
+}
+
+.journey-item small {
+    color: #a39b8c;
+    font-family: var(--small-font);
+    font-size: 9px;
+}
+
+
