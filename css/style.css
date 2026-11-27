@@ -834,3 +834,43 @@ button {
 }
 
 
+/* --------------------------------------------------
+   10. FOOTER
+   -------------------------------------------------- */
+
+.site-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    padding: 30px 7.5vw;
+    background: #201f1b;
+    color: white;
+}
+
+.site-footer .brand span {
+    color: var(--yellow);
+}
+
+.footer-links {
+    display: flex;
+    justify-content: flex-end;
+    gap: 25px;
+}
+
+.footer-links a,
+.site-footer p {
+    color: #b5b0a4;
+    font-family: var(--small-font);
+    font-size: 9px;
+}
+
+.footer-links a:hover {
+    color: var(--yellow);
+}
+
+.site-footer p {
+    grid-column: 1 / -1;
+    margin: 5px 0 0;
+}
+
+
