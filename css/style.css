@@ -481,11 +481,31 @@ button {
 .visual-weather {
     background: linear-gradient(135deg, #17324d, #5b9bd1);
     color: #e6f4ff;
+
+    width: 90%;
+
 }
 
 .visual-employee {
     background: linear-gradient(135deg, #c5b48b, #f1dfaa);
     color: #373020;
+}
+
+.visual-chatbot {
+    background: linear-gradient(135deg, #1b1740, #6a5be2 55%, #8fd3ff);
+    color: #f3f0ff;
+}
+
+.project-card-center {
+    grid-column: 1 / -1;
+    justify-self: center;
+    width: calc((100% - 24px) / 2);
+}
+
+@media (max-width: 650px) {
+    .project-card-center {
+        width: 100%;
+    }
 }
 
 .visual-number {
